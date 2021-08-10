@@ -1,0 +1,38 @@
+<div class="dashBoardView">
+    <div class="shapePanel">
+        <span id="strokeColor" >
+            <label class= "label"> stroke color:</label>
+            <input id= "strokeColor" type="color" [formControl]= strokeColor class = "dashboardButton">
+        </span>
+        <span id="fillColor">
+            <label class= "label"> fill color:</label>
+            <input  id="FillColor" type="color" [formControl]= FillColor class = "dashboardButton"> 
+        </span>
+        
+        <button (click) =  AllowFill() class = "dashboardButton">No fill</button>
+        <button (click)= "ChangShape('circle')" [disabled]="GetShape()=='circle'" class = "dashboardButton"> circle </button>
+        <button (click)= "ChangShape('rectangle')"  [disabled]="GetShape()=='rectangle'" class = "dashboardButton"> Rectangle </button>
+       
+    </div>
+    <app-canvas-area></app-canvas-area>
+    <div id= "undoButtom">
+    <button (click)= "SaveChanges()" [disabled] = "UnsavedChanges()" class = "dashboardButton"> save </button>
+    <button (click)= "CancelLastEdit()"[disabled] = "UnsavedChanges()" class = "dashboardButton"> undo </button>
+        <label id="markerLabel"class="markersLabel">
+            marker
+        </label>
+        <label id="deleteLabel" class="markersLabel">
+            delete
+        </label>
+        <label id="strokeLabel" class="markersLabel">
+            stroke color
+        </label>
+        <label id="fillLabel" class="markersLabel">
+            fill color
+        </label>
+    </div>
+    <div class= "markers" >       
+        <div class="marker" *ngFor = "let marker of GetMarkers(); index as i">
+            <app-marker-info  [index]=i ></app-marker-info>
+</div>
+</div>

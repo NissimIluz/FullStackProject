@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Adapters\Adapters.csproj" />
+    <ProjectReference Include="..\Config\Config.csproj" />
+    <ProjectReference Include="..\DocumentServiceImpl\DocumentServiceImpl.csproj" />
+    <ProjectReference Include="..\DynamicLoaderService\DynamicLoaderServiceImp.csproj" />
+    <ProjectReference Include="..\MarkerServiceImp\MarkerServiceImp.csproj" />
+    <ProjectReference Include="..\MessengerContracts\MessengerContracts.csproj" />
+    <ProjectReference Include="..\ProjectContracts\ProjectContracts.csproj" />
+    <ProjectReference Include="..\ProjectDTO\ProjectDTO.csproj" />
+    <ProjectReference Include="..\SharingServiceImp\SharingServiceImp.csproj" />
+    <ProjectReference Include="..\UserServiceImpl\UserServiceImpl.csproj" />
+
+  </ItemGroup>
+
+
+</Project>

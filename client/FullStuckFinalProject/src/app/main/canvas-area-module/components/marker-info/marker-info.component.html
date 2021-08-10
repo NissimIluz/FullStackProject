@@ -1,0 +1,15 @@
+  <span #canvas >
+    <span (click) = OpenDiv() #shape >{{index+1}}</span>
+    <span *ngIf = "true || marker.merkeType=='circle'" class="dot"></span>
+    <span  *ngIf = "marker.merkeType=='Irectangle'"  class="rect"></span>
+
+  <button class="button" #removeMarker>&#10006;
+  </button>
+  <input id="input" type="color" [formControl]= reColor class="button" >
+  <input id="input" type="color" [formControl]= reFill class="button" >
+
+ <div #opend class= "opend" *ngIf = Open()[index] (click) = OpenDiv() > ({{marker.x1}},{{marker.y1}}),({{marker.x2}},{{marker.y2}})</div>
+
+
+
+ 

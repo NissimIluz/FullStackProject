@@ -1,0 +1,4 @@
+.dialog-container-custom .mat-dialog-container {
+	padding: 0;
+	background: black!important;
+}

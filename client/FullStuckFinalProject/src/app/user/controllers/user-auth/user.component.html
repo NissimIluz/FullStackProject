@@ -1,0 +1,45 @@
+<div class= "enter">
+<div>
+    <h1  id ="Welcome">Welcome</h1>
+</div>
+    
+<div id="mainEnterScrean">
+    <div id="currentAction">
+        <h3 id = "currentActionContainer">{{CurrentAction}}</h3>
+    </div>
+
+    <div id ="form">
+        <form [formGroup]="userFormData" >
+            <div id="input">
+            <div class= "inputContainer">
+            <label class= "label">Enter full name: </label><br/>
+            <input #nameInput id="FullName" type="text" formControlName = "userName"/>
+            <p class= "warningLabel">
+            {{InvalidMassageName}}
+            </p>
+            </div>
+            <div class= "inputContainer">
+            <label label class= "label" [ngClass]= "class">Enter email: </label> <br/>
+            <input #idInput id="userID" type="text" formControlName = "userID"/> <br/>
+            <p class= "warningLabel">
+            {{InvalidMassageID}}  
+            </p>
+            </div>
+  
+            </div>
+            <div id="buttonContainer">
+            <span class= "oneButton">
+            <button id="submit" type="submit" (click)=SendForm() [disabled]="userFormData.controls.userName.invalid || userFormData.controls.userID.invalid">{{CurrentAction}}</button>
+            </span>
+            <span class= "oneButton"><span id="or">or</span>
+            <button id="instead" (click) = "ChangeAction()" > {{AlternativeAction.toLowerCase()}}</button>
+            </span>
+            </div>
+        </form>
+        
+    </div>  
+    
+</div>
+<div id="Error">
+    <p id="ErrorM">{{ServerDTO}}</p>
+</div>

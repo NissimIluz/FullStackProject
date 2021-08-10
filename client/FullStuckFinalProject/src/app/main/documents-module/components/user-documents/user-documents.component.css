@@ -1,0 +1,117 @@
+table {
+    width: 100%;
+  }
+  
+  tr.example-detail-row {
+    height: 0;
+    border-width: 0;
+  }
+  tr.example-detail-row td{
+      border-width: 0;
+  }
+  tr.example-element-row:not(.example-expanded-row):hover {
+    background: #f1f1f1;
+  }
+  
+  tr.example-element-row:not(.example-expanded-row):active {
+    background: #f1f1f1;
+  }
+  
+  .example-element-detail {
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .example-element-symbol {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: normal;
+  }
+  
+  .example-element-description {
+    padding: 16px;
+  }
+  
+  .example-element-description-attribution {
+    opacity: 0.5;
+  }
+  
+  mat-icon {
+    cursor: pointer;
+  }
+  td table td.mat-cell{
+      line-height: 48px;
+      border-width: 1px;
+      background-color: #f1f1f1;
+  }
+  table{
+      border-spacing: 0;
+  }
+::ng-deep .mat-tab-label {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+::ng-deep .mat-tab-label-active {
+   color: #495057;
+    background-color: #dedede;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+::ng-deep .mat-ink-bar {
+  display: none;
+}
+.shareDocs{
+    height: 48px;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 48px;
+    border-width: 1px;
+    background-color: #fff;
+    border-bottom-color: #dedede;
+    border-bottom-style: solid;
+}
+.sharedUsers{
+   float: left;
+   margin-left: 25px;
+   width: 50%;
+}
+.removeShare{
+    text-align: left;
+}
+button.raised, button.raised:hover{
+    line-height: 30px;
+}
+button.raised:hover{
+    background-color: #cdcdcd;
+}
+.newDoc{
+    margin-top: 20px;
+    height: 40px;
+    line-height: 60px;
+   
+    text-align: center;
+}
+/* mouse over link */
+a.panelBtn{
+  background-color: transparent;
+  color: blue;
+}
+a.panelBtn:hover {
+  cursor: pointer;
+  color: deepskyblue;
+}
+
+/* selected link */
+a.panelBtn:active {
+  cursor: pointer;
+  color: purple;
+}
+.file-input {
+  display: none;
+}
+.file-upload{
+  display: inline;
+  margin-right: 20px;
+}

@@ -1,0 +1,157 @@
+div {
+    font-family:'Times New Roman', Times, serif;
+    margin-left: auto ;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+#Welcome
+{
+    font-size: 70px;
+    margin-top: 0%;
+    padding-top: 5%;
+    text-align: center;
+    padding-bottom:3% ;
+}
+p{
+    text-align: left;  
+}
+#mainEnterScrean
+{
+    border: 1px;
+    border-radius: 3px;
+    border-color: rgba(4, 4, 63, 0.849);
+    border-style: solid;
+    width: 318px;
+    background-color: rgba(82, 82, 245, 0.144);
+}
+#currentAction
+{
+    text-align: left;
+    color: white;
+    background-color: rgba(0, 128, 128, 0.719);
+}
+#currentActionContainer
+{
+    padding: 15px;
+    font-size: 24px;
+    padding-left: 19px
+}
+.inputContainer
+{
+    padding-left: 12px;
+    margin: 7px;
+}
+#input {
+    width: 318px;
+}
+#instead {
+    margin: 1px;
+    border: none;
+}
+.label{
+    margin-top:5px;
+    
+
+}
+input {
+    margin-top: 4px;
+    margin-left: -4px;
+    width: 95%;
+    border: rgba(10, 10, 95, 0.849) solid 1px;
+    border-radius: 4px;
+    background-color: rgba(235, 235, 238, 0.404);
+    height: 20px;
+    font-size: 18px;
+    
+}
+input:focus {
+    margin-top: 4px;
+    margin-left: -4px;
+    width: 95%;
+    border: rgb(10, 10, 95) solid 1px;
+    border-radius: 4px;
+    background-color: rgba(27, 29, 163, 0.527);
+    height: 20px;
+    font-size: 18px;
+  }
+#buttonContainer
+{
+    margin-bottom: 22px;
+    padding: 6px;
+    margin-top: 29px;}
+.warningLabel
+{
+    color: red;
+    font-size: 15px;
+    margin   : 0px;
+    height: 20px;
+}
+#Error
+{
+    color: red;
+    width: 150px;
+}
+
+.dialog-container-custom .mat-dialog-container {
+	padding: 0;
+	background: grey;
+}
+#mainEnterScrean button
+{
+    border-radius: 3px;
+}
+#submit
+{
+    border: rgba(10, 10, 95, 0.849) solid 1px;
+    background-color: #1a2879c9;
+    color: white
+}
+#submit:disabled
+{
+    color:rgb(253 244 244 / 49%);
+}
+#instead{
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor:pointer;
+    color: #0e1a5ae3;
+    text-decoration: underline ;
+}
+button
+{
+    font-size: 22px;  
+    cursor:pointer;  
+}
+
+
+.oneButton{
+    padding: 15px;
+    margin: 15px;
+}
+#Error{
+    padding: 15px;
+    margin: 15px;   
+    padding-right: 33px;
+    width: 800px;
+    margin: 0 auto;
+    font-size: 30px;
+    height: 100px;
+    text-align: center;
+}
+.inputInvalid
+{
+    border-color: red;
+}
+
+#ErrorM
+{
+    text-align: center;
+}
+#or
+{
+    color: #0e1a5ae3;
+    font-size: 20px;
+    cursor:context-menu;
+}
+

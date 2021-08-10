@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DocumentServiceImpl\DocumentServiceImpl.csproj" />
+    <ProjectReference Include="..\FinalProject\FinalProject.csproj" />
+    <ProjectReference Include="..\MarkerServiceImp\MarkerServiceImp.csproj" />
+    <ProjectReference Include="..\ProjectContracts\ProjectContracts.csproj" />
+    <ProjectReference Include="..\ProjectDTO\ProjectDTO.csproj" />
+    <ProjectReference Include="..\SharingServiceImp\SharingServiceImp.csproj" />
+    <ProjectReference Include="..\UserServiceImpl\UserServiceImpl.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InfraDAL\InfraDAL.csproj" />
+    <ProjectReference Include="..\PolicyAttributeImp\InfraAttributes.csproj" />
+    <ProjectReference Include="..\ProjectContracts\ProjectContracts.csproj" />
+    <ProjectReference Include="..\ProjectDTO\ProjectDTO.csproj" />
+  </ItemGroup>
+
+</Project>

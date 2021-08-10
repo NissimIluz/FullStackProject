@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>{{title}}</h1>
+
+  <mat-form-field appearance="fill">
+    <input type="text"  #user matInput placeholder="Select user" [formControl]="myControl" [matAutocomplete]="auto" >
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="GetUser" (onSelectionChange)="user.value !=undefined">
+        <mat-option *ngFor="let user of filteredOptions | async" [value]="user">
+            {{user}}
+        </mat-option>
+      </mat-autocomplete>
+  </mat-form-field>
+
+<div mat-dialog-actions>
+    <button mat-button mat-dialog-close>{{cancelButtonText}}</button>
+    <button mat-button (click)="AddShare(user.value)">{{actionButtonText}}</button>
+</div>

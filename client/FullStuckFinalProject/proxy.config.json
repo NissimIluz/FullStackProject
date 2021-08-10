@@ -1,0 +1,13 @@
+{
+    "/api/*":{
+        "target":"https://localhost:44326/",
+        "secure":false
+    },
+    "/ws": {
+          "target": "wss://localhost:44326/ws",
+          "secure": false,
+          "ws": true
+        }
+    
+    
+}

@@ -1,0 +1,36 @@
+
+#nav{
+    background-color:#a9b1a9;
+    padding: 10px 0 25px;
+    letter-spacing: .2px;
+    cursor: context-menu;
+    border-bottom: rgb(2 2 48 / 31%) solid 3px;
+    border-top: rgba(2, 2, 48, 0.575) solid 0.5px;
+}
+
+#Title
+{
+    float: left;
+    padding: 10px;
+    padding: 16px;
+    font-size: 38px;  
+}
+#Welcome
+{
+    display: table;
+    margin: 0 auto;
+    padding: 16px;
+    font-size: 35px;
+    font:bold;
+    padding-left: 0px;
+    padding-top: 20px
+
+}
+#panelBt
+{
+    float:right;
+    padding: 10px;
+    text-align: center;
+    padding-right: 10px;
+}
+
