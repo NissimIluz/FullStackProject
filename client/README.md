@@ -7,6 +7,6 @@ Make changes to the markers and see others changes online without any need to re
 
 ### Instructions:
 To run the client please do the following:
-* Clone the repository to the same folder as the server side.
+* Make sure that this folder is in the same folder as the folder server.
 * Make sure you run "npm install"
 * To run the client please write the following command: ng serve --proxy-config proxy.config.json --live-reload false
