@@ -8,7 +8,7 @@ Make changes to the markers and see others changes online without any need to re
 ### Instructions:
 To use the .Net Server please do the following:
 * Clone the repository to the same folder as the client.
-* Download and and run the SQL script to have our database.
+* Download and run the SQL script to have our database.
 * In appsettings.json file change under "MySettings", the "MyConn" string with your computer name.
 
 To run the unit tests please change the "MyConn" string with your computer name
