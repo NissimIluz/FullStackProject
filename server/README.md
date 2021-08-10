@@ -7,7 +7,7 @@ Make changes to the markers and see others changes online without any need to re
 
 ### Instructions:
 To use the .Net Server please do the following:
-* Clone the repository to the same folder as the client.
+* Make sure that this folder is in the same folder as the folder client.
 * Download and run the SQL script to have our database.
 * In appsettings.json file change under "MySettings", the "MyConn" string with your computer name.
 
